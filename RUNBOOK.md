@@ -2,7 +2,7 @@
 
 - Prerequisites Verification:
 
-# Check .NET 8
+## Check .NET 8
 
 ```
 dotnet --version
@@ -151,3 +151,28 @@ Data Analyst: analyst@company.com / analyst123 (Read-only access)
 
 
 Senior Manager: manager@company.com / manager123 (Read/Write access)
+
+## How Algorithm Works
+
+The algorithm ensures you get the best possible substitutes with all the metadata needed for informed decision-making.
+
+- The implementation:
+
+  - Extracts comprehensive metadata including production year, manufacturer, package type, etc.
+
+  - Implements a sophisticated decision tree for component substitution:
+
+  - Internal database search first
+
+    - Vendor API searches (DigiKey, Mouser, etc.)
+
+    - LLM + RAG intelligent search
+
+    - Fallback fuzzy matching
+
+    - Provides vendor information including pricing, stock levels, and direct URLs
+
+    - Includes confidence scoring and reasoning for substitutions
+
+    - Handles bulk operations for multiple components
+
