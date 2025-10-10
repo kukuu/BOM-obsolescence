@@ -39,3 +39,115 @@ dotnet ef database update
 # Seed initial data
 dotnet run --seed
 ```
+
+
+- Step 2: Frontend Setup
+
+```
+cd BOM-compliance/frontend
+
+# Install dependencies
+npm install
+
+# Create environment file
+cp .env.example .env.local
+
+# Update .env.local with your API URL
+echo "REACT_APP_API_BASE_URL=http://localhost:5000/api" > .env.local
+
+```
+
+- Step 3: Run Applications
+
+Terminal 1 - Backend:
+
+```
+cd BOM-compliance/backend/BOM.Compliance.API
+dotnet run
+# API will be available at: http://localhost:5000
+
+```
+
+Terminal 2 - Frontend:
+
+```
+cd BOM-compliance/frontend
+npm start
+# Frontend will be available at: http://localhost:3000
+```
+
+- Step 4: Run Tests
+
+Backend Tests:
+
+```
+cd BOM-compliance/backend
+
+# Run all tests
+dotnet test
+
+# Run specific test categories
+dotnet test --filter "Category=Unit"
+dotnet test --filter "Category=Integration"
+
+# Run with coverage
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+
+``` 
+
+Frontend Tests:
+
+```
+
+cd BOM-compliance/frontend
+
+# Run all tests
+npm test
+
+# Run tests once
+npm test -- --watchAll=false
+
+# Run with coverage
+npm test -- --coverage --watchAll=false
+
+```
+
+- Step 5: Docker Deployment (Alternative)
+
+```
+
+cd BOM-compliance/backend
+
+# Build and run all services
+docker-compose up -d --build
+
+# Check running services
+docker-compose ps
+
+# View logs
+docker-compose logs -f api
+
+```
+
+- Step 6: Verification
+
+```
+# Test API health
+curl http://localhost:5000/health
+
+# Test authentication
+curl -X POST http://localhost:5000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"analyst@company.com","password":"analyst123"}'
+
+# Access frontend in browser
+open http://localhost:3000
+
+```
+
+- Test Users
+
+Data Analyst: analyst@company.com / analyst123 (Read-only access)
+
+
+Senior Manager: manager@company.com / manager123 (Read/Write access)
