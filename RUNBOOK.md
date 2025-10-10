@@ -165,16 +165,16 @@ The algorithm ensures you get the best possible substitutes with all the metadat
   - SEARCHES:
 
     - Internal database search first
-    
+
     - Vendor API searches (DigiKey, Mouser, etc.)
 
     - LLM + RAG intelligent search
 
     - Fallback fuzzy matching
 
-    - Provides vendor information including pricing, stock levels, and direct URLs
+  - Provides vendor information including pricing, stock levels, and direct URLs
 
-    - Includes confidence scoring and reasoning for substitutions
+  - Includes confidence scoring and reasoning for substitutions
 
-    - Handles bulk operations for multiple components
+  - Handles bulk operations for multiple components
 
