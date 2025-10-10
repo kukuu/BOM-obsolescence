@@ -162,8 +162,10 @@ The algorithm ensures you get the best possible substitutes with all the metadat
 
   - Implements a sophisticated decision tree for component substitution:
 
-  - Internal database search first
+  - SEARCHES:
 
+    - Internal database search first
+    
     - Vendor API searches (DigiKey, Mouser, etc.)
 
     - LLM + RAG intelligent search
