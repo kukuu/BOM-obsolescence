@@ -1,6 +1,6 @@
 # Metadata Extraction Work Flow
 
-'''
+```
 
 PDF UPLOAD & METADATA EXTRACTION WORKFLOW
 ==========================================
@@ -61,4 +61,4 @@ PDF UPLOAD & METADATA EXTRACTION WORKFLOW
     ├── ✅ RoHS: Compliant
     └── ✅ Specs: 13 items extracted
 
-    ```
+```
