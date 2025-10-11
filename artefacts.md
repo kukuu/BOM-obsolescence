@@ -5,20 +5,20 @@
 ```
 
 ╔══════════════════════════════════════════════════════════════════════╗
-║                    COMPONENT METADATA EXTRACTION                    ║
-║                          EXTRACTION SUCCESSFUL!                     ║
+║                    COMPONENT METADATA EXTRACTION                     ║
+║                          EXTRACTION SUCCESSFUL!                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
 ║  ┌────────────────────────────────────────────────────────────────┐  ║
-║  │                      📄 DATASHEET SUMMARY                     │  ║
+║  │                      📄 DATASHEET SUMMARY                      │  ║
 ║  ├────────────────────────────────────────────────────────────────┤  ║
 ║  │                                                                │  ║
-║  │  🔹 REFERENCE ID:    LM358DR                                  │  ║
-║  │  🔹 COMPONENT NAME:  Dual Operational Amplifier               │  ║
-║  │  🔹 MANUFACTURER:    Texas Instruments                        │  ║
-║  │  🔹 PRODUCTION YEAR: 2023                                     │  ║
-║  │  🔹 PACKAGE TYPE:    SOIC-8                                   │  ║
-║  │  🔹 RoHS STATUS:     ✅ Compliant                             │  ║
+║  │  🔹 REFERENCE ID:    LM358DR                                   │  ║
+║  │  🔹 COMPONENT NAME:  Dual Operational Amplifier                │  ║
+║  │  🔹 MANUFACTURER:    Texas Instruments                         │  ║
+║  │  🔹 PRODUCTION YEAR: 2023                                      │  ║
+║  │  🔹 PACKAGE TYPE:    SOIC-8                                    │  ║
+║  │  🔹 RoHS STATUS:     ✅ Compliant                              │  ║
 ║  │                                                                │  ║
 ║  └────────────────────────────────────────────────────────────────┘  ║
 ║                                                                      ║
