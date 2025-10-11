@@ -1,4 +1,6 @@
-# Metadata Extraction Result - Component Datasheet
+# Artefacts
+
+## Component Datasheet
 
 ```
 
