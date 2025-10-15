@@ -1,6 +1,6 @@
 # Complete Installation & Testing Steps
 
-- Prerequisites Verification
+##  Prerequisites Verification
 ```
 
 # Check .NET 8
@@ -18,7 +18,7 @@ docker --version
 psql --version
 
 ```
-- Step 1: Backend Setup
+## Step 1: Backend Setup
 ```
 cd BOM-Compliance-repository/backend
 
@@ -36,7 +36,7 @@ dotnet ef database update
 
 ```
 
-- Step 2: Frontend Setup
+## Step 2: Frontend Setup
 
 Includes the following key pages and components:
 
@@ -76,7 +76,7 @@ echo "REACT_APP_API_BASE_URL=http://localhost:5000/api" > .env.local
 
 ```
 
-- Step 3: Run Applications
+## Step 3: Run Applications
 
 Terminal 1 - Backend:
 
@@ -93,7 +93,7 @@ npm start
 # Frontend available at: http://localhost:3000
 ```
 
-- Step 4: Run Tests
+## Step 4: Run Tests
 
 Backend tests:
 
@@ -126,7 +126,7 @@ npm test -- --watchAll=false
 npm test -- --coverage --watchAll=false
 ```
 
-- Step 5: Docker Deployment (Alternative)
+## Step 5: Docker Deployment (Alternative)
 
 ```
 cd BOM-Compliance-repository/backend
@@ -141,7 +141,7 @@ docker-compose ps
 docker-compose logs -f api
 ```
 
-- Step 6: Verification
+## Step 6: Verification
 ```
 # Test API health
 curl http://localhost:5000/health
