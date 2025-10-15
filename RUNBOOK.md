@@ -37,6 +37,31 @@ dotnet ef database update
 ```
 
 - Step 2: Frontend Setup
+
+Includes the following key pages and components:
+
+- App.js - Main component with routing
+
+- AuthContext.js - Authentication context for user state and token management
+
+- Login.js - Login page
+
+- Dashboard.js - Dashboard page
+
+- Materials.js - Materials list page
+
+- MaterialUpload.js - PDF upload and material creation page
+
+- SubstitutionSearch.js - Page for searching substitutes for a component
+
+- BulkSubstitution.js - Page for bulk substitution search
+
+- Services for API calls and utilities.
+
+
+
+
+
 ```
 cd BOM-Compliance-repository/frontend
 
