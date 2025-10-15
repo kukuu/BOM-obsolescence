@@ -40,23 +40,23 @@ dotnet ef database update
 
 Includes the following key pages and components:
 
-- App.js - Main component with routing
+  - App.js - Main component with routing
 
-- AuthContext.js - Authentication context for user state and token management
+  - AuthContext.js - Authentication context for user state and token management
 
-- Login.js - Login page
+  - Login.js - Login page
 
-- Dashboard.js - Dashboard page
+  - Dashboard.js - Dashboard page
 
-- Materials.js - Materials list page
+  - Materials.js - Materials list page
 
-- MaterialUpload.js - PDF upload and material creation page
+  - MaterialUpload.js - PDF upload and material creation page
 
-- SubstitutionSearch.js - Page for searching substitutes for a component
+  - SubstitutionSearch.js - Page for searching substitutes for a component
 
-- BulkSubstitution.js - Page for bulk substitution search
+  - BulkSubstitution.js - Page for bulk substitution search
 
-- Services for API calls and utilities.
+  - Services for API calls and utilities.
 
 
 
