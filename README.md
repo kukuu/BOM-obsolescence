@@ -11,7 +11,7 @@ https://github.com/kukuu/BOM-obsolescence/blob/main/directory-structure.md
 
 ## Metadata Extraction Worflow
 https://github.com/kukuu/BOM-obsolescence/blob/main/metadata-extraction-workflow.md
-
+ 
 ## RUNBOOK
 https://github.com/kukuu/BOM-obsolescence/blob/main/RUNBOOK.md
 
