@@ -2,36 +2,31 @@
 
 
 ```
-BOM-compliance/
+BOM-Compliance-repository/
 ├── backend/
 │   ├── BOM.Compliance.API/
 │   │   ├── Controllers/
 │   │   │   ├── MaterialsController.cs
-│   │   │   ├── SubstitutionController.cs
-│   │   │   ├── AuthController.cs
-│   │   │   └── UploadController.cs
-│   │   ├── Services/
-│   │   │   ├── JwtService.cs
-│   │   │   └── AuthService.cs
+│   │   │   └── AuthController.cs
 │   │   ├── Middleware/
 │   │   │   ├── ExceptionHandlingMiddleware.cs
 │   │   │   └── LoggingMiddleware.cs
+│   │   ├── Services/
+│   │   │   ├── JwtService.cs
+│   │   │   └── AuthService.cs
 │   │   ├── Program.cs
 │   │   ├── appsettings.json
-│   │   ├── appsettings.Development.json
 │   │   └── BOM.Compliance.API.csproj
 │   ├── BOM.Compliance.Application/
 │   │   ├── Interfaces/
 │   │   │   ├── IMaterialService.cs
 │   │   │   ├── IMLDataExtractionService.cs
-│   │   │   ├── ISupabaseService.cs
 │   │   │   ├── IVendorSearchService.cs
 │   │   │   └── IAuthService.cs
 │   │   ├── Services/
 │   │   │   ├── MaterialService.cs
-│   │   │   ├── EnhancedMLDataExtractionService.cs
-│   │   │   ├── VendorSearchService.cs
-│   │   │   └── SupabaseService.cs
+│   │   │   ├── MLDataExtractionService.cs
+│   │   │   └── VendorSearchService.cs
 │   │   ├── Models/
 │   │   │   ├── Requests/
 │   │   │   │   ├── CreateMaterialRequest.cs
@@ -43,7 +38,7 @@ BOM-compliance/
 │   │   │   │   ├── SubstitutionResponse.cs
 │   │   │   │   └── BulkSubstitutionResponse.cs
 │   │   │   └── ExternalApis/
-│   │   │       ├── EnhancedMLExtractionResponse.cs
+│   │   │       ├── MLExtractionResponse.cs
 │   │   │       ├── LLMRAGSearchResponse.cs
 │   │   │       └── VendorComponent.cs
 │   │   └── BOM.Compliance.Application.csproj
@@ -66,45 +61,35 @@ BOM-compliance/
 │   │   │   ├── DatabaseSeeder.cs
 │   │   │   └── Configurations/
 │   │   │       ├── MaterialConfiguration.cs
-│   │   │       └── AlternativeComponentConfiguration.cs
-│   │   ├── Migrations/
-│   │   │   ├── [Migration Files]
-│   │   │   └── ApplicationDbContextModelSnapshot.cs
+│   │   │       ├── MaterialSpecificationConfiguration.cs
+│   │   │       ├── AlternativeComponentConfiguration.cs
+│   │   │       ├── LifecycleEventConfiguration.cs
+│   │   │       └── UserConfiguration.cs
 │   │   └── BOM.Compliance.Infrastructure.csproj
 │   ├── tests/
 │   │   ├── UnitTests/
 │   │   │   ├── Services/
 │   │   │   │   ├── MaterialServiceTests.cs
-│   │   │   │   ├── MLDataExtractionServiceTests.cs
-│   │   │   │   └── VendorSearchServiceTests.cs
-│   │   │   ├── Controllers/
-│   │   │   │   ├── MaterialsControllerTests.cs
-│   │   │   │   └── SubstitutionControllerTests.cs
+│   │   │   │   └── MLDataExtractionServiceTests.cs
 │   │   │   └── UnitTests.csproj
-│   │   ├── IntegrationTests/
-│   │   │   ├── DatabaseTests.cs
-│   │   │   ├── ApiIntegrationTests.cs
-│   │   │   └── IntegrationTests.csproj
-│   │   └── TestHelpers/
-│   │       ├── TestDataFactory.cs
-│   │       └── MockServices.cs
+│   │   └── IntegrationTests/
+│   │       ├── DatabaseTests.cs
+│   │       └── IntegrationTests.csproj
 │   ├── docker-compose.yml
 │   ├── Dockerfile
-│   ├── azure-pipelines.yml
 │   └── BOM.Compliance.sln
 ├── frontend/
 │   ├── public/
 │   │   ├── index.html
-│   │   ├── favicon.ico
-│   │   └── manifest.json
+│   │   └── favicon.ico
 │   ├── src/
 │   │   ├── components/
+│   │   │   ├── Navbar.js
 │   │   │   ├── MaterialTable.js
 │   │   │   ├── MaterialFilters.js
 │   │   │   ├── ComplianceBadge.js
 │   │   │   ├── AlternativeComponents.js
-│   │   │   ├── PdfUploader.js
-│   │   │   └── VendorInfo.js
+│   │   │   └── PdfUploader.js
 │   │   ├── pages/
 │   │   │   ├── Login.js
 │   │   │   ├── Dashboard.js
@@ -114,42 +99,26 @@ BOM-compliance/
 │   │   │   └── BulkSubstitution.js
 │   │   ├── services/
 │   │   │   ├── api.js
-│   │   │   ├── auth.js
 │   │   │   └── materialService.js
 │   │   ├── contexts/
 │   │   │   └── AuthContext.js
 │   │   ├── hooks/
-│   │   │   ├── useMaterials.js
-│   │   │   ├── useSubstitution.js
-│   │   │   └── useAuth.js
+│   │   │   ├── useAuth.js
+│   │   │   └── useMaterials.js
 │   │   ├── utils/
 │   │   │   ├── constants.js
 │   │   │   ├── helpers.js
 │   │   │   └── validation.js
 │   │   ├── styles/
-│   │   │   ├── App.css
-│   │   │   └── components.css
+│   │   │   └── App.css
 │   │   ├── App.js
-│   │   ├── App.test.js
 │   │   ├── index.js
 │   │   └── reportWebVitals.js
 │   ├── package.json
-│   ├── package-lock.json
 │   ├── Dockerfile
 │   └── .env.example
-├── docs/
-│   ├── api/
-│   │   └── endpoints.md
-│   ├── database/
-│   │   └── schema.md
-│   └── deployment/
-│       └── setup-guide.md
-├── scripts/
-│   ├── setup-database.sh
-│   ├── run-tests.sh
-│   └── deploy-local.sh
 ├── README.md
 ├── RUNBOOK.md
-└── docker-compose.override.yml
+└── setup-dev.sh
 
 ```
