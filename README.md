@@ -16,6 +16,9 @@ https://github.com/kukuu/BOM-obsolescence/blob/main/directory-structure.md
 ## Metadata Extraction Worflow
 https://github.com/kukuu/BOM-obsolescence/blob/main/metadata-extraction-workflow.md
 
+## Cloud CI/CD Deployment
+https://github.com/kukuu/BOM-obsolescence/blob/main/cloud-CI-CD-deployment.md
+
 ## Verification Checklist
 https://github.com/kukuu/BOM-obsolescence/blob/main/verification-checklist.md
  
