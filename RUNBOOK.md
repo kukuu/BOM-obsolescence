@@ -1,15 +1,13 @@
 # Complete Installation & Testing Steps
 
-- Prerequisites Verification:
-
-## Check .NET 8
-
+- Prerequisites Verification
 ```
-dotnet --version
 
+# Check .NET 8
+dotnet --version
 # Should output: 8.0.100 or higher
 
-# Check Node.js
+# Check Node.js  
 node --version
 # Should output: 18.0.0 or higher
 
@@ -20,11 +18,9 @@ docker --version
 psql --version
 
 ```
-
-- Step 1: Backend Setup: 
-
+- Step 1: Backend Setup
 ```
-cd BOM-compliance/backend
+cd BOM-Compliance-repository/backend
 
 # Restore dependencies
 dotnet restore
@@ -36,20 +32,18 @@ createdb bom_compliance
 cd BOM.Compliance.API
 dotnet ef database update
 
-# Seed initial data
-dotnet run --seed
-```
+# Seed initial data (the seeder runs automatically on first startup)
 
+```
 
 - Step 2: Frontend Setup
-
 ```
-cd BOM-compliance/frontend
+cd BOM-Compliance-repository/frontend
 
 # Install dependencies
 npm install
 
-# Create environment file
+# Create environment file  
 cp .env.example .env.local
 
 # Update .env.local with your API URL
@@ -62,26 +56,24 @@ echo "REACT_APP_API_BASE_URL=http://localhost:5000/api" > .env.local
 Terminal 1 - Backend:
 
 ```
-cd BOM-compliance/backend/BOM.Compliance.API
+cd BOM-Compliance-repository/backend/BOM.Compliance.API
 dotnet run
-# API will be available at: http://localhost:5000
-
+# API available at: http://localhost:5000
 ```
 
 Terminal 2 - Frontend:
-
 ```
-cd BOM-compliance/frontend
+cd BOM-Compliance-repository/frontend
 npm start
-# Frontend will be available at: http://localhost:3000
+# Frontend available at: http://localhost:3000
 ```
 
 - Step 4: Run Tests
 
-Backend Tests:
+Backend tests:
 
 ```
-cd BOM-compliance/backend
+cd BOM-Compliance-repository/backend
 
 # Run all tests
 dotnet test
@@ -92,31 +84,27 @@ dotnet test --filter "Category=Integration"
 
 # Run with coverage
 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-
-``` 
-
-Frontend Tests:
-
 ```
 
-cd BOM-compliance/frontend
+Frontend tests:
+
+```
+cd BOM-Compliance-repository/frontend
 
 # Run all tests
 npm test
 
-# Run tests once
+# Run tests once  
 npm test -- --watchAll=false
 
 # Run with coverage
 npm test -- --coverage --watchAll=false
-
 ```
 
 - Step 5: Docker Deployment (Alternative)
 
 ```
-
-cd BOM-compliance/backend
+cd BOM-Compliance-repository/backend
 
 # Build and run all services
 docker-compose up -d --build
@@ -126,11 +114,9 @@ docker-compose ps
 
 # View logs
 docker-compose logs -f api
-
 ```
 
 - Step 6: Verification
-
 ```
 # Test API health
 curl http://localhost:5000/health
@@ -142,39 +128,10 @@ curl -X POST http://localhost:5000/api/auth/login \
 
 # Access frontend in browser
 open http://localhost:3000
-
 ```
 
 - Test Users
 
-Data Analyst: analyst@company.com / analyst123 (Read-only access)
+  - Data Analyst: analyst@company.com / analyst123 (Read-only access)
 
-
-Senior Manager: manager@company.com / manager123 (Read/Write access)
-
-## How Algorithm Works
-
-The algorithm ensures you get the best possible substitutes with all the metadata needed for informed decision-making.
-
-- The implementation:
-
-  - Extracts comprehensive metadata including production year, manufacturer, package type, etc.
-
-  - Implements a sophisticated decision tree for component substitution:
-
-  - SEARCHES:
-
-    - Internal database search first
-
-    - Vendor API searches (DigiKey, Mouser, etc.)
-
-    - LLM + RAG intelligent search
-
-    - Fallback fuzzy matching
-
-  - Provides vendor information including pricing, stock levels, and direct URLs
-
-  - Includes confidence scoring and reasoning for substitutions
-
-  - Handles bulk operations for multiple components
-
+  - Senior Manager: manager@company.com / manager123 (Read/Write access)
