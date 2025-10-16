@@ -13,7 +13,7 @@
 
 - Projected files and dependencies
 
-## ✅ Frontend Complete
+## ✅ Frontend
 
 - React components with hooks
 
