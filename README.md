@@ -17,7 +17,7 @@ https://github.com/kukuu/BOM-obsolescence/blob/main/artefacts.md
 https://github.com/kukuu/BOM-obsolescence/blob/main/directory-structure.md 
 
 ## Metadata Extraction Worflow
-https://github.com/kukuu/BOM-obsolescence/blob/main/metadata-extraction-workflow.md
+https://github.com/kukuu/BOM-obsolescence/blob/main/metadata-extraction-workflow.md 
 
 ##  Code Repository
 
