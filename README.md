@@ -14,7 +14,7 @@ The system implements a sophisticated four-tier decision tree that sequentially 
 https://github.com/kukuu/BOM-obsolescence/blob/main/artefacts.md 
 
 ## Directory Structure
-https://github.com/kukuu/BOM-obsolescence/blob/main/directory-structure.md
+https://github.com/kukuu/BOM-obsolescence/blob/main/directory-structure.md 
 
 ## Metadata Extraction Worflow
 https://github.com/kukuu/BOM-obsolescence/blob/main/metadata-extraction-workflow.md
