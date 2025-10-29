@@ -5,7 +5,7 @@
 
 # Check .NET 8
 dotnet --version
-# Should output: 8.0.100 or higher
+# Should output: 8.0.100 or higher 
 
 # Check Node.js  
 node --version
