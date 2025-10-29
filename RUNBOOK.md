@@ -15,7 +15,7 @@ node --version
 docker --version
 
 # Check PostgreSQL (if running locally)
-psql --version
+psql --version (recommended: 12+)
 
 ```
 ## Step 1: Backend Setup
