@@ -8,7 +8,7 @@ The solution leverages a data science modern technology stack with C# .NET 8 for
  
 - **Algorithm Workflow:** 
 
-The system implements a sophisticated four-tier decision tree that sequentially searches internal databases, vendor APIs, Vector Search - LLM+RAG pipelines, and fallback fuzzy matching to ensure optimal component substitution with comprehensive metadata extraction including production years, compliance status, vendor pricing, and stock availability.   
+The system implements a sophisticated four-tier decision tree that sequentially searches internal databases, vendor APIs, Vector Search - LLM+RAG pipelines, and fallback fuzzy matching to ensure optimal component substitution with comprehensive metadata extraction including production years, compliance status, vendor pricing, and stock availability.    
 
 ## Artefacts 
 https://github.com/kukuu/BOM-obsolescence/blob/main/artefacts.md  
