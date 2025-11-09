@@ -1,5 +1,5 @@
 # BOM Obsolescence Compliance
-
+ 
 This is a **C#** application.  
 
 This BOM Compliance System addresses the critical challenge of component obsolescence in manufacturing and construction industries. The platform solves the expensive and time-consuming problem of electronic components and building materials becoming obsolete, which can halt production lines and delay projects costing companies millions. By automatically identifying at-risk components and providing compliant substitutes, the system prevents production stoppages and ensures regulatory compliance throughout product lifecycles. 
