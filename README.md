@@ -12,7 +12,7 @@ The system implements a sophisticated four-tier decision tree that sequentially 
 
 ## Artefacts 
 https://github.com/kukuu/BOM-obsolescence/blob/main/artefacts.md   
-
+ 
 ## Directory Structure
 https://github.com/kukuu/BOM-obsolescence/blob/main/directory-structure.md  
 
